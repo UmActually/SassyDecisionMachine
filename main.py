@@ -53,12 +53,12 @@ if option_count > 1:
 else:
     all_pairs = [(options[0][0], options[0][0])]
 
-# Votar
+# Vote
 print('\nTime to vote!\nA pair of options will be prompted each time.')
 print('Enter a \'1\' to select the left option, \'2\' for right.')
 
-# La cantidad total de pares es (n * (n - 1)) / 2
-# pero voy a usar len() por si las dudas
+# The total count of pairs is (n * (n - 1)) / 2
+# but I use len() just in case
 pair_count = len(all_pairs)
 shuffle(all_pairs)
 
